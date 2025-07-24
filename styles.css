@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('homebg.jpg') no-repeat center center fixed;
+    background-size:cover;
+    color: #ffffff;
+}
+
+header {
+    background: #344E35; /* Slight transparency for better contrast */
+    opacity: 90%;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6); /* Adds contrast over background */
+    max-width: 700px;
+    margin: 60px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+main button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background: #344E35;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background:#344E35;
+    opacity: 90%;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px;
+    background: #344E35;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
