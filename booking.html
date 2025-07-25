@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Form - Firefly Haven</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #739A7B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #344E35;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      color: #344E35;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Book Your Stay</h2>
+    <form onsubmit="submitBooking(event)">
+      <label for="stay">Stay in:</label>
+      <input type="text" id="stay" name="stay" readonly required />
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required pattern="^[a-zA-Z\s]{2,}$" title="Enter a valid name" />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10}" required title="Enter 10-digit phone number" />
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+    <a class="back-link" href="locations.html">← Back to Locations</a>
+  </div>
+
+  <script>
+    // Get stay from URL
+    const params = new URLSearchParams(window.location.search);
+    const stay = params.get('stay');
+    if (stay) {
+      document.getElementById('stay').value = stay;
+    }
+
+    function submitBooking(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+
+      alert(`✅ Booking Confirmed!\n\nStay: ${stay}\nName: ${name}\nEmail: ${email}\nPhone: ${phone}`);
+
+      e.target.reset();
+      window.location.href = 'locations.html'; // Redirect after submission
+    }
+  </script>
+
+</body>
+</html>

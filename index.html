@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Camping as a Service</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>CampEase - Camping as a Service</title>
 </head>
 <body>
-    <header>
-        <h1>Camping as a Service</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+  <div class="hero-section">
+    <!-- Header / Navigation -->
+    <header class="navbar">
+      <div class="logo">Firefly Haven</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        <li><a href="locations.html">Locations</a></li>
+
+        </ul>
+      </nav>
     </header>
-    <main>
-        <h2>Welcome to Your Next Adventure!</h2>
-        <p>Explore the great outdoors with our comprehensive camping services.</p>
-        <button onclick="location.href='service.html'">Explore Services</button>
+
+    <!-- Hero Content -->
+    <main class="hero-content">
+      <h1>
+        <span>Twilight Glow Campground</span>
+        <strong>"Where evenings come alive with light"</strong>
+      </h1>
+      <p>
+        Don't wait to catch your firefly adventure! Book Now!
+      </p>
+
+      <div class="buttons">
+<button class="btn explore" onclick="window.open('locations.html', '_blank')">Explore Locations</button>
+        <button class="learn_more" onclick="location.href='about.html'">Learn More</button>
+      </div>
+
+      <div class="stats">
+        <div><strong>500+</strong><br>Premium Locations</div>
+        <div><strong>50k+</strong><br>Happy Campers</div>
+        <div><strong>24/7</strong><br>Support</div>
+      </div>
     </main>
-    <footer>
-        <p>&copy; FireFly Camp By Heena Patil. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+  </div>
+
+    <footer style="text-align: center; padding: 20px;">
+  <p>&copy; 2023 Camping as a Service. All rights reserved.</p>
+
+  <div style="margin-top: 10px;">
+    <a href="https://www.linkedin.com/in/heena-patil-b25ba7343" target="_blank" style="margin: 0 10px; font-size: 1.5rem; text-decoration: none; color: #0077b5;">
+      LinkedIn
+    </a>
+    |
+    <a href="https://github.com/Heena-Patil719" target="_blank" style="margin: 0 10px; font-size: 1.5rem; text-decoration: none; color: #5fb7fa;">
+      GitHub
+    </a>
+  </div>
+</footer>
 </body>
 </html>

@@ -1,38 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Contact Us - Camping as a Service</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Contact Us - FireFly Haven</title>
+  <style>
+    main {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 60%;
+      max-width: 2000px;
+      margin: 80px auto;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 40px; /* reduced from 500px */
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* Adds space between fields */
+    }
+
+    label {
+      text-align: left;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      padding: 15px;
+      border-radius: 8px;
+      border: none;
+      font-size: 3rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+      width: 100%;
+    }
+
+    button {
+      background-color: #ff6600;
+      color: white;
+      font-size: 1.1rem;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color:  #218838;
+    }
+    
+    .back-btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px 30px;
+      background-color: #344E35;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 2rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background-color: #D5D565;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Camping as a Service</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
-    <footer>
-        <p>&copy; 2023 Camping as a Service. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    
+  <a href="index.html" class="back-btn">← Back to Home</a>
+  <main>
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; FireFly Camp by Heena Patil. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
